@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="legal-hero">
+    <div class="legal-hero-inner">
+        <div class="hero-badge">Legal</div>
+        <h1 class="legal-title">
+            Privacy <em>Policy</em>
+        </h1>
+        <p class="legal-subtitle">
+            Your finances are personal. Here's exactly what we collect,
+            why we collect it, and how we keep it safe.
+        </p>
+        <p class="legal-updated">Last updated · November 26, 2026</p>
+    </div>
+</section>
+
+<section class="legal-body">
+    <article class="legal-card">
+        <p class="legal-intro">
+            This Privacy Policy explains how Spendly ("we", "us") collects, uses,
+            and protects your information when you use our personal expense
+            tracking service ("Service"). By using Spendly, you agree to the
+            practices described below.
+        </p>
+
+        <div class="legal-block">
+            <h2 class="legal-heading"><span class="legal-num">01</span>Data We Collect</h2>
+            <p>
+                We only collect what we need to run the Service:
+            </p>
+            <ul>
+                <li><strong>Account information</strong> — your name, email address, and a securely hashed password.</li>
+                <li><strong>Expense data</strong> — the amounts, categories, dates, and descriptions you choose to enter.</li>
+                <li><strong>Basic usage data</strong> — information such as login times and browser type, used to keep the Service reliable and secure.</li>
+            </ul>
+            <p>
+                We do not collect bank account numbers, card details, or access to
+                your financial institutions.
+            </p>
+        </div>
+
+        <div class="legal-block">
+            <h2 class="legal-heading"><span class="legal-num">02</span>How We Use Your Data</h2>
+            <p>
+                Your information is used solely to provide and improve Spendly, including to:
+            </p>
+            <ul>
+                <li>Create and manage your account.</li>
+                <li>Store, display, and summarize your expenses.</li>
+                <li>Generate category breakdowns and spending insights for you.</li>
+                <li>Protect the Service against fraud, abuse, and unauthorized access.</li>
+            </ul>
+            <p>
+                We never sell your personal or financial data, and we do not use it
+                for advertising.
+            </p>
+        </div>
+
+        <div class="legal-block">
+            <h2 class="legal-heading"><span class="legal-num">03</span>Data Storage</h2>
+            <p>
+                Your data is stored on secured servers, and passwords are stored
+                only in hashed form. We take reasonable technical and organizational
+                measures to protect your information, though no system can be
+                guaranteed to be completely secure.
+            </p>
+            <p>
+                We retain your data for as long as your account is active. If you
+                delete your account, your personal and expense data will be
+                permanently removed from our systems within a reasonable period.
+            </p>
+        </div>
+
+        <div class="legal-block">
+            <h2 class="legal-heading"><span class="legal-num">04</span>Third Party Services</h2>
+            <p>
+                We may rely on trusted third-party providers for services such as
+                hosting and font delivery. These providers only receive the minimum
+                information necessary to perform their function and are expected to
+                protect it appropriately.
+            </p>
+            <p>
+                We do not share your expense data with third parties for their own
+                marketing purposes. We may disclose information if required by law.
+            </p>
+        </div>
+
+        <div class="legal-block">
+            <h2 class="legal-heading"><span class="legal-num">05</span>Contact Us</h2>
+            <p>
+                If you have questions about this Privacy Policy, or would like to
+                access, correct, or delete your data, please reach out to us at
+                <a href="mailto:privacy@spendly.example" class="legal-link">privacy@spendly.example</a>.
+            </p>
+            <p>
+                You can also review our <a href="{{ url_for('terms') }}" class="legal-link">Terms and Conditions</a>
+                for more information about using the Service.
+            </p>
+        </div>
+    </article>
+
+    <div class="legal-cta">
+        <p>Ready to start tracking every rupee?</p>
+        <div class="legal-cta-actions">
+            <a href="{{ url_for('landing') }}" class="btn-ghost">Back to home</a>
+            <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
